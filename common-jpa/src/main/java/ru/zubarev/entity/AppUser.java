@@ -1,8 +1,8 @@
-package zubarev.entity;
+package ru.zubarev.entity;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
-import zubarev.entity.enums.UserState;
+import ru.zubarev.entity.enums.UserState;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

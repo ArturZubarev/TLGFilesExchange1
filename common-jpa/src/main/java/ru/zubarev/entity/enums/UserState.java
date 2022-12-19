@@ -1,4 +1,4 @@
-package zubarev.entity.enums;
+package ru.zubarev.entity.enums;
 
 
 public enum UserState {

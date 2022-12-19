@@ -1,28 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bff57b5-52be-4e86-aae2-b90613e52563" name="Changes" comment="" />
+    <list default="true" id="1bff57b5-52be-4e86-aae2-b90613e52563" name="Changes" comment="new commit">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02aa90643e627c5bfad09e0b4de7a33706075843" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/089e6acca410d3dda06e1bb4e7f33d1bdc05e887" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b78b3e0c7c9c7e2584e3f5bd400e50302987ace" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c1d11fa21fc978c83dff81540aad617d49f1ddf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10e8b1ca0b98b6daac143bb4f4b98ccbb6ca36e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1dea96b5698cd26457582df42f8ec401e02ffafe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c73424f9ed2c7f9c477796cf328003ed768bf6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/3317ebb9e3181e3656bfdfd5958ba00ad8283bc9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/390981f79b4739b8a6e9666ac4ba995876d50549" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/4265b16752b52adf27757d808070d47ee8aabb81" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fe456b9b906829ae3284c6abdd517235f41de85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51cfdcd1c7ae02f08acbeff7927100cce23a5ddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53a25899ca43c090ca7dd193a8ec798b41bd507f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57b234ece8210ccbc5237976f433ffde23e1b1da" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62cf4ba8478ab4cefab30f189dfb51feb23baa02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a7a5c2c274c6186991eda771d9f09b4d674acae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/7190a3354787bdcb4d05b341fb2c01ae4b5392fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84cf73dae1bc488575d945b62d3220c26e338e25" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942735d7f8deafe579e5622e0faef5c1a796506f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6cbe5853d6a41e489c0885184bee46702abba86" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a752e72cf4b71a02cf032c271c4010d25c3a94a3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a887ce160e54db45730ae5c16ee79a42c0fedabf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/abecae062309f9994fdefaa39540da75909731ff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae17fdbf5957d5a75e358d4863122fbb511cfb3c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b04a23d1dfb084fd967c01291d9364d3c866d607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3d1eac4052d9a81a127bb6b1ab50cb0e7242609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6e3e5e19e26b12970f909306c81a6f787e38d84" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c6300a1a623340c107c8be6d3e7d5db1ca27bb85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c841384a2881de662ed8d79e870be661e26c0cd5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccd800d86467356a967e15e7898e96e06ff84751" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de6aec83f0af9398221a99874e5ff408b0394b28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2bbdeb4897403d5da9480448a81ade4f48d6c81" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2d6246c21c156fb75c765be6ac576ac6578e3f6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc3176bf2654ad938bfc3f855a1a0ff2aa6af8fe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcc6d6da82255d9e5ef68657c688642d266039d8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppDocumentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppPhotoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/BinaryContentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/AppDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/AppPhoto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/BinaryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/exception/UploadFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/resources/static/img/123.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/RestServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/enums/UserState.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/entity/enums/UserState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-rabbitmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-rabbitmq/src/main/java/ru/zubarev/model/RabbitQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-rabbitmq/src/main/java/ru/zubarev/model/RabbitQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/DispatcherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/DispatcherApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/Utils/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/Utils/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/controller/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/controller/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/controller/UpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/AnswerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/AnswerConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/UpdateProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/UpdateProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/AnswerConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/AnswerConsumerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/UpdateProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/UpdateProducerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/NodeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/NodeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/dao/RawDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/dao/RawDataDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/entity/RawData.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/entity/RawData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/ConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/ProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/enums/ServiceCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/enums/ServiceCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/ProducerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/ProducerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2HAmexnQjpiVTjVJMwxZ3okOw7M" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjects/BinanceAPIApp/TLGFilesExchange/rest-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;04966af76263ce42786fb3089b5c983c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProjects\BinanceAPIApp\TLGFilesExchange\rest-service\src\main\resources" />
+      <recent name="D:\JavaProjects\BinanceAPIApp\TLGFilesExchange\common-jpa\src\main\java" />
+      <recent name="D:\JavaProjects\BinanceAPIApp\TLGFilesExchange\template" />
+      <recent name="D:\JavaProjects\BinanceAPIApp\TLGFilesExchange\node\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProjects\BinanceAPIApp\TLGFilesExchange\node\src\main\resources\static\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.zubarev" />
+      <recent name="ru.zubarev.configuration" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RestServiceApplication">
+    <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dispatcher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.DispatcherApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zubarev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="TLGFilesExchange" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.NodeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zubarev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.NodeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zubarev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rest-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.RestServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zubarev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RestServiceApplication" />
+        <item itemvalue="Spring Boot.NodeApplication" />
+        <item itemvalue="Spring Boot.DispatcherApplication" />
+        <item itemvalue="Spring Boot.NodeApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +263,59 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667736365839</updated>
+      <workItem from="1667736367250" duration="3105000" />
+      <workItem from="1667739838873" duration="2991000" />
+      <workItem from="1667742862102" duration="398000" />
+      <workItem from="1667743273159" duration="12931000" />
+      <workItem from="1667821680956" duration="3740000" />
+      <workItem from="1667828649762" duration="4353000" />
+      <workItem from="1667894523041" duration="13475000" />
+      <workItem from="1667909456463" duration="9993000" />
+      <workItem from="1667920357880" duration="93000" />
+      <workItem from="1667920458976" duration="170000" />
+      <workItem from="1669044138017" duration="61000" />
+      <workItem from="1669910618340" duration="594000" />
+      <workItem from="1669914660560" duration="26000" />
+      <workItem from="1670492573398" duration="20686000" />
+      <workItem from="1670589371749" duration="140000" />
+      <workItem from="1670589538452" duration="3559000" />
+      <workItem from="1670681816358" duration="1349000" />
+      <workItem from="1671466690768" duration="1386000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/UpdateProducerImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

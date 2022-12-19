@@ -1,2 +1,28 @@
-package ru.zubarev.entity;public class RawData {
+package ru.zubarev.entity;
+
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import lombok.*;
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+import org.telegram.telegrambots.meta.api.objects.Update;
+
+import javax.persistence.*;
+
+@Setter
+@Getter
+@EqualsAndHashCode(exclude = "id")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "raw_data")
+@TypeDef(name="jsonb", typeClass = JsonBinaryType.class)
+public class RawData {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Type(type="jsonb")
+    @Column(columnDefinition = "jsonb")
+    private Update event;
 }
+
