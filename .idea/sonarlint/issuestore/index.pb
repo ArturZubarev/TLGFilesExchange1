@@ -15,8 +15,6 @@ o
 ?common-jpa/src/main/java/ru/zubarev/entity/enums/UserState.java,5\7\57b234ece8210ccbc5237976f433ffde23e1b1da
 b
 2node/src/main/java/ru/zubarev/NodeApplication.java,3\3\3317ebb9e3181e3656bfdfd5958ba00ad8283bc9
-<
-node/pom.xml,0\8\089e6acca410d3dda06e1bb4e7f33d1bdc05e887
 g
 7node/src/main/java/ru/zubarev/services/FileService.java,f\2\f2d6246c21c156fb75c765be6ac576ac6578e3f6
 g
@@ -39,8 +37,6 @@ G
 common-rabbitmq/pom.xml,1\d\1dea96b5698cd26457582df42f8ec401e02ffafe
 o
 ?common-rabbitmq/src/main/java/ru/zubarev/model/RabbitQueue.java,0\2\02aa90643e627c5bfad09e0b4de7a33706075843
-B
-dispatcher/pom.xml,5\3\53a25899ca43c090ca7dd193a8ec798b41bd507f
 k
 ;dispatcher/src/main/java/ru/zubarev/Utils/MessageUtils.java,0\c\0c1d11fa21fc978c83dff81540aad617d49f1ddf
 n
