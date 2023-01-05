@@ -5,8 +5,6 @@ m
 =common-jpa/src/main/java/ru/zubarev/dao/BinaryContentDAO.java,d\e\de6aec83f0af9398221a99874e5ff408b0394b28
 m
 =common-jpa/src/main/java/ru/zubarev/entity/BinaryContent.java,7\1\7190a3354787bdcb4d05b341fb2c01ae4b5392fd
-B
-common-jpa/pom.xml,f\2\f2bbdeb4897403d5da9480448a81ade4f48d6c81
 g
 7common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java,b\0\b04a23d1dfb084fd967c01291d9364d3c866d607
 g

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bff57b5-52be-4e86-aae2-b90613e52563" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/configuration/RestServiceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/org/zubarev/restservice/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/zubarev/restservice/RestServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/src/test/java/org/zubarev/restservice/RestServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/test/java/org/zubarev/restservice/RestServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rest-service" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -191,7 +191,7 @@
       <workItem from="1670681816358" duration="1349000" />
       <workItem from="1671466690768" duration="1386000" />
       <workItem from="1672835092956" duration="1324000" />
-      <workItem from="1672909263971" duration="4551000" />
+      <workItem from="1672909263971" duration="4979000" />
     </task>
     <task id="LOCAL-00001" summary="new commit">
       <created>1671530605801</created>
