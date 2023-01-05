@@ -8,6 +8,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 import ru.zubarev.dao.RawDataDao;
 import ru.zubarev.entity.AppDocument;
+import ru.zubarev.entity.AppPhoto;
 import ru.zubarev.entity.RawData;
 import ru.zubarev.exception.UploadFileException;
 import ru.zubarev.services.FileService;
@@ -15,6 +16,8 @@ import ru.zubarev.services.MainService;
 import ru.zubarev.services.ProducerService;
 import ru.zubarev.dao.AppUserDAO;
 import ru.zubarev.entity.AppUser;
+import ru.zubarev.services.enums.LinkType;
+
 import static ru.zubarev.entity.enums.UserState.BASIC_STATE;
 import static ru.zubarev.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
 import static ru.zubarev.services.enums.ServiceCommands.*;
@@ -62,8 +65,9 @@ public class MainServiceImpl implements MainService {
         }
         try {
             AppDocument document = fileService.processDoc(update.getMessage());
-            var answer = "Ваш документ успешно загружен" +
-                    "Ссылка для скачивания:static/img/123.jpg";
+            String link = fileService.generateLink(document.getId(), LinkType.GET_DOC);
+            var answer = "Ваш документ успешно загружен!" +
+                    "Ссылка для скачивания: " + link;
             sendAnswer(answer,chatId);
         }catch (UploadFileException e){
             log.error(e);
@@ -92,9 +96,17 @@ public class MainServiceImpl implements MainService {
         if (isNotAllowToSendContent(chatId,appUser)){
             return;
         }
-        //TODO добавить логику сохранения фото
-        var answer="Фото успещно загружено. Ссылка для скачивания:_____________";
-        sendAnswer(answer,chatId);
+        try {
+            AppPhoto photo = fileService.processPhoto(update.getMessage());
+            String link = fileService.generateLink(photo.getId(), LinkType.GET_PHOTO);
+            var answer = "Ваше фото успешно загружено!" +
+                    "Ссылка для скачивания: " + link;
+            sendAnswer(answer,chatId);
+        }   catch (UploadFileException e){
+            log.error(e);
+            String error = "К сожалению загрузка не удалась, повторите попытку позднее";
+            sendAnswer(error,chatId);
+        }
 
     }
 

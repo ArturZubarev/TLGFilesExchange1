@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import org.telegram.telegrambots.meta.api.objects.Document;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.PhotoSize;
+import ru.zubarev.CryptoTool;
 import ru.zubarev.dao.AppDocumentDAO;
 import ru.zubarev.dao.AppPhotoDAO;
 import ru.zubarev.dao.BinaryContentDAO;
@@ -17,6 +18,7 @@ import ru.zubarev.entity.AppPhoto;
 import ru.zubarev.entity.BinaryContent;
 import ru.zubarev.exception.UploadFileException;
 import ru.zubarev.services.FileService;
+import ru.zubarev.services.enums.LinkType;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,14 +35,18 @@ public class FileServiceImpl implements FileService {
     private String fileInfoUri;
     @Value("${service.file_storage.uri}")
     private String fileStorageUri;
+    @Value("${link.address}")
+    private String linkAddress;
+    private final CryptoTool cryptoTool;
     private final AppDocumentDAO appDocumentDAO;
     private final BinaryContentDAO binaryContentDAO;
 
-    public FileServiceImpl(AppDocumentDAO appDocumentDAO,BinaryContentDAO binaryContentDAO,
-                           AppPhotoDAO appPhotoDAO){
+    public FileServiceImpl(AppDocumentDAO appDocumentDAO, BinaryContentDAO binaryContentDAO,
+                           AppPhotoDAO appPhotoDAO, CryptoTool cryptoTool){
         this.appDocumentDAO=appDocumentDAO;
         this.binaryContentDAO=binaryContentDAO;
         this.appPhotoDAO = appPhotoDAO;
+        this.cryptoTool = cryptoTool;
     }
     @Override
     public AppDocument processDoc(Message telegramMessage) {
@@ -77,6 +83,13 @@ public class FileServiceImpl implements FileService {
         } else {
             throw new UploadFileException("Bad response from telegram service: " + response);
         }
+    }
+
+    @Override
+    public String generateLink(Long docId, LinkType linkType){
+        var hash = cryptoTool.hashOf(docId);
+        return "http://" + linkAddress + "/" + linkType + "?id=" +hash;
+
     }
 
     private BinaryContent getPersistentBinaryContent(ResponseEntity<String> response) {
