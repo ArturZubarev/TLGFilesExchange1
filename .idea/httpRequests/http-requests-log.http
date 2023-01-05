@@ -1,0 +1,16 @@
+POST http://127.0.0.1:8089/mail/send
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "Bk2Wg5w9py",
+  "emailTo": "arturzubarevvrn@gmail.com"
+}
+
+<> 2023-01-05T164911.404.json
+
+###
+

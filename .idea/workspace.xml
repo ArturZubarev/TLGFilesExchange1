@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bff57b5-52be-4e86-aae2-b90613e52563" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rest-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/RestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/configuration/RestServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/MailApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/dto/MailParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/service/MailSenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/service/impl/MailSenderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/test/java/ru/zubarev/MailApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/3317ebb9e3181e3656bfdfd5958ba00ad8283bc9" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/node.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/node.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestService">
+  <component name="RunManager" selected="Spring Boot.MailApplication">
+    <configuration name="scratch | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.DispatcherApplication" />
@@ -131,23 +134,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="TLGFilesExchange" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.NodeApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.zubarev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="node" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.NodeApplication" />
+    <configuration name="MailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mail-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.MailApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.zubarev.*" />
@@ -171,26 +160,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="rest-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.zubarev.RestServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.zubarev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.scratch | #1" />
+      <item itemvalue="Spring Boot.DispatcherApplication" />
+      <item itemvalue="Spring Boot.MailApplication" />
+      <item itemvalue="Spring Boot.RestService" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MailApplication" />
         <item itemvalue="Spring Boot.RestService" />
         <item itemvalue="Spring Boot.DispatcherApplication" />
-        <item itemvalue="Spring Boot.NodeApplication" />
-        <item itemvalue="Spring Boot.RestServiceApplication" />
-        <item itemvalue="Spring Boot.NodeApplication (1)" />
+        <item itemvalue="HTTP Request.scratch | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +202,7 @@
       <workItem from="1670681816358" duration="1349000" />
       <workItem from="1671466690768" duration="1386000" />
       <workItem from="1672835092956" duration="1324000" />
-      <workItem from="1672909263971" duration="9775000" />
+      <workItem from="1672909263971" duration="16905000" />
     </task>
     <task id="LOCAL-00001" summary="new commit">
       <created>1671530605801</created>
@@ -259,6 +240,11 @@
           <url>file://$PROJECT_DIR$/dispatcher/src/main/java/ru/zubarev/service/impl/UpdateProducerImpl.java</url>
           <line>19</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/controller/MailController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.springframework.core.NestedIOException" package="org.springframework.core" />

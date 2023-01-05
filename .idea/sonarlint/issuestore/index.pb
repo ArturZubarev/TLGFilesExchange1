@@ -11,8 +11,6 @@ g
 7common-jpa/src/main/java/ru/zubarev/entity/AppUser.java,4\f\4fe456b9b906829ae3284c6abdd517235f41de85
 o
 ?common-jpa/src/main/java/ru/zubarev/entity/enums/UserState.java,5\7\57b234ece8210ccbc5237976f433ffde23e1b1da
-b
-2node/src/main/java/ru/zubarev/NodeApplication.java,3\3\3317ebb9e3181e3656bfdfd5958ba00ad8283bc9
 g
 7node/src/main/java/ru/zubarev/services/MainService.java,8\4\84cf73dae1bc488575d945b62d3220c26e338e25
 a
