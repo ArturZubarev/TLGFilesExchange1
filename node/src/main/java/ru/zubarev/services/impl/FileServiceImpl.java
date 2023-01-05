@@ -8,9 +8,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.telegram.telegrambots.meta.api.objects.Document;
 import org.telegram.telegrambots.meta.api.objects.Message;
+import org.telegram.telegrambots.meta.api.objects.PhotoSize;
 import ru.zubarev.dao.AppDocumentDAO;
+import ru.zubarev.dao.AppPhotoDAO;
 import ru.zubarev.dao.BinaryContentDAO;
 import ru.zubarev.entity.AppDocument;
+import ru.zubarev.entity.AppPhoto;
 import ru.zubarev.entity.BinaryContent;
 import ru.zubarev.exception.UploadFileException;
 import ru.zubarev.services.FileService;
@@ -23,6 +26,7 @@ import java.net.URL;
 @Log4j
 @Service
 public class FileServiceImpl implements FileService {
+    private final AppPhotoDAO appPhotoDAO;
     @Value("${token}")
     private String token;
     @Value("${service.file_info.uri}")
@@ -32,9 +36,11 @@ public class FileServiceImpl implements FileService {
     private final AppDocumentDAO appDocumentDAO;
     private final BinaryContentDAO binaryContentDAO;
 
-    public FileServiceImpl(AppDocumentDAO appDocumentDAO,BinaryContentDAO binaryContentDAO){
+    public FileServiceImpl(AppDocumentDAO appDocumentDAO,BinaryContentDAO binaryContentDAO,
+                           AppPhotoDAO appPhotoDAO){
         this.appDocumentDAO=appDocumentDAO;
         this.binaryContentDAO=binaryContentDAO;
+        this.appPhotoDAO = appPhotoDAO;
     }
     @Override
     public AppDocument processDoc(Message telegramMessage) {
@@ -56,12 +62,45 @@ public class FileServiceImpl implements FileService {
             } throw new UploadFileException("Bad response from telegram service: " + response);
         }
     }
+
+    @Override
+    public AppPhoto processPhoto(Message telegramMessage) {
+        var photoSizeCount = telegramMessage.getPhoto().size();
+        var photoIndex = photoSizeCount > 1 ? telegramMessage.getPhoto().size() - 1 : 0;
+        PhotoSize telegramPhoto = telegramMessage.getPhoto().get(photoIndex);
+        String fileId = telegramPhoto.getFileId();
+        ResponseEntity<String> response = getFilePath(fileId);
+        if (response.getStatusCode() == HttpStatus.OK) {
+            BinaryContent persistentBinaryContent = getPersistentBinaryContent(response);
+            AppPhoto transientAppPhoto = buildTransientAppPhoto(telegramPhoto, persistentBinaryContent);
+            return appPhotoDAO.save(transientAppPhoto);
+        } else {
+            throw new UploadFileException("Bad response from telegram service: " + response);
+        }
+    }
+
+    private BinaryContent getPersistentBinaryContent(ResponseEntity<String> response) {
+        String filePath = getFilePath(response);
+        byte[] fileInByte = downloadFile(filePath);
+        BinaryContent transientBinaryContent = BinaryContent.builder()
+                .fileAsArrayOfBytes(fileInByte)
+                .build();
+        return binaryContentDAO.save(transientBinaryContent);
+    }
     private AppDocument buildTransientAppDoc(Document telegramDoc,BinaryContent persistentBinaryContent){
         return AppDocument.builder()
                 .telegramField(telegramDoc.getFileId())
                 .docName(telegramDoc.getFileName())
                 .binaryContent(persistentBinaryContent)
                 .mimeType(telegramDoc.getMimeType())
+                .build();
+    }
+
+    private AppPhoto buildTransientAppPhoto(PhotoSize telegramPhoto, BinaryContent persistentBinaryContent) {
+        return AppPhoto.builder()
+                .telegramField(telegramPhoto.getFileId())
+                .binaryContent(persistentBinaryContent)
+                .fileSize(telegramPhoto.getFileSize())
                 .build();
     }
 

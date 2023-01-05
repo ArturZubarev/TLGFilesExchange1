@@ -16,8 +16,6 @@ o
 b
 2node/src/main/java/ru/zubarev/NodeApplication.java,3\3\3317ebb9e3181e3656bfdfd5958ba00ad8283bc9
 g
-7node/src/main/java/ru/zubarev/services/FileService.java,f\2\f2d6246c21c156fb75c765be6ac576ac6578e3f6
-g
 7node/src/main/java/ru/zubarev/services/MainService.java,8\4\84cf73dae1bc488575d945b62d3220c26e338e25
 a
 1node/src/main/java/ru/zubarev/entity/RawData.java,1\0\10e8b1ca0b98b6daac143bb4f4b98ccbb6ca36e5
@@ -31,8 +29,6 @@ k
 ;node/src/main/java/ru/zubarev/services/ProducerService.java,a\7\a752e72cf4b71a02cf032c271c4010d25c3a94a3
 q
 Anode/src/main/java/ru/zubarev/services/enums/ServiceCommands.java,c\8\c841384a2881de662ed8d79e870be661e26c0cd5
-o
-?node/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java,c\c\ccd800d86467356a967e15e7898e96e06ff84751
 G
 common-rabbitmq/pom.xml,1\d\1dea96b5698cd26457582df42f8ec401e02ffafe
 o
