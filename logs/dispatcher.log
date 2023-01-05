@@ -72,3 +72,7 @@
 2023-01-05 12:06:15 DEBUG UpdateProducerImpl:20 - /help
 2023-01-05 12:06:22 DEBUG UpdateProducerImpl:20 - /help
 2023-01-05 12:07:07 DEBUG UpdateProducerImpl:20 - 
+2023-01-05 15:50:01 DEBUG UpdateProducerImpl:20 - Привет
+2023-01-05 15:50:03 DEBUG UpdateProducerImpl:20 - /help
+2023-01-05 15:50:14 DEBUG UpdateProducerImpl:20 - 
+2023-01-05 15:51:30 DEBUG UpdateProducerImpl:20 - 

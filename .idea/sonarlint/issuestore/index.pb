@@ -53,5 +53,3 @@ Edispatcher/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java,a\b\abec
 ,rest-service/src/main/webapp/WEB-INF/web.xml,a\e\ae17fdbf5957d5a75e358d4863122fbb511cfb3c
 V
 &rest-service/src/main/webapp/index.jsp,6\a\6a7a5c2c274c6186991eda771d9f09b4d674acae
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

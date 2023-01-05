@@ -25,7 +25,7 @@ import static ru.zubarev.services.enums.ServiceCommands.*;
 @Service
 @Log4j
 @AllArgsConstructor
-@EnableAutoConfiguration
+
 public class MainServiceImpl implements MainService {
         private final AppUserDAO appUserDAO;
         private final ProducerService producerService;

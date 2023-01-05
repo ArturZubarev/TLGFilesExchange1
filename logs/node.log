@@ -1318,3 +1318,7 @@
 2023-01-05 12:06:15 DEBUG ConsumerServiceImpl:25 - NODE: text message is received
 2023-01-05 12:06:22 DEBUG ConsumerServiceImpl:25 - NODE: text message is received
 2023-01-05 12:07:07 DEBUG ConsumerServiceImpl:33 - NODE: photo message is received
+2023-01-05 15:50:01 DEBUG ConsumerServiceImpl:25 - NODE: text message is received
+2023-01-05 15:50:03 DEBUG ConsumerServiceImpl:25 - NODE: text message is received
+2023-01-05 15:50:14 DEBUG ConsumerServiceImpl:33 - NODE: photo message is received
+2023-01-05 15:51:30 DEBUG ConsumerServiceImpl:39 - NODE: doc message is received
