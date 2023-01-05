@@ -3,7 +3,9 @@ package ru.zubarev.service.impl;
 import lombok.extern.log4j.Log4j;
 import org.apache.commons.io.FileUtils;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import ru.zubarev.CryptoTool;
 import ru.zubarev.dao.AppDocumentDAO;
 import ru.zubarev.dao.AppPhotoDAO;
 import ru.zubarev.entity.AppDocument;
@@ -16,37 +18,47 @@ import java.io.IOException;
 
 @Service
 @Log4j
-public class FileServiceImpl implements FileService {
-    public FileServiceImpl(AppDocumentDAO appDocumentDAO, AppPhotoDAO appPhotoDAO) {
-        this.appDocumentDAO = appDocumentDAO;
-        this.appPhotoDAO = appPhotoDAO;
-    }
 
+public class FileServiceImpl implements FileService {
     private final AppDocumentDAO appDocumentDAO;
     private final AppPhotoDAO appPhotoDAO;
+    private final CryptoTool cryptoTool;
+
+    public FileServiceImpl(AppDocumentDAO appDocumentDAO, AppPhotoDAO appPhotoDAO, CryptoTool cryptoTool) {
+        this.appDocumentDAO = appDocumentDAO;
+        this.appPhotoDAO = appPhotoDAO;
+        this.cryptoTool = cryptoTool;
+    }
+
     @Override
-    public AppDocument getDocument(String docId) {
-        //TODO дешифрование хеш-строки
-        var id= Long.parseLong(docId);
+    public AppDocument getDocument(String hash) {
+        var id = cryptoTool.idOf(hash);
+        if (id == null) {
+            return null;
+        }
         return appDocumentDAO.findById(id).orElse(null);
     }
 
     @Override
-    public AppPhoto getPhoto(String photoId) {
-        var id=Long.parseLong(photoId);
+    public AppPhoto getPhoto(String hash) {
+        var id = cryptoTool.idOf(hash);
+        if (id == null) {
+            return null;
+        }
         return appPhotoDAO.findById(id).orElse(null);
     }
 
     @Override
-    //преобразует запись в бд в ссылку, с помощью которой можно будет скачать файл
     public FileSystemResource getFileSystemResource(BinaryContent binaryContent) {
         try {
-            File temp=File.createTempFile("tempFile", ".bin");
+            //TODO добавить генерацию имени временного файла
+            File temp = File.createTempFile("tempFile", ".bin");
             temp.deleteOnExit();
-            FileUtils.writeByteArrayToFile(temp,binaryContent.getFileAsArrayOfBytes());
+            FileUtils.writeByteArrayToFile(temp, binaryContent.getFileAsArrayOfBytes());
             return new FileSystemResource(temp);
-        }catch (IOException e){
+        } catch (IOException e) {
             log.error(e);
-        } return null;
+            return null;
+        }
     }
 }
