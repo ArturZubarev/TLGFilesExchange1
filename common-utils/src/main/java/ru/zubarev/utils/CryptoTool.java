@@ -1,4 +1,4 @@
-package ru.zubarev;
+package ru.zubarev.utils;
 
 import org.hashids.Hashids;
 
