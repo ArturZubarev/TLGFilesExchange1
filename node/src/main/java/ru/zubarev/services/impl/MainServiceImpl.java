@@ -11,12 +11,15 @@ import ru.zubarev.entity.AppDocument;
 import ru.zubarev.entity.AppPhoto;
 import ru.zubarev.entity.RawData;
 import ru.zubarev.exception.UploadFileException;
+import ru.zubarev.services.AppUserService;
 import ru.zubarev.services.FileService;
 import ru.zubarev.services.MainService;
 import ru.zubarev.services.ProducerService;
 import ru.zubarev.dao.AppUserDAO;
 import ru.zubarev.entity.AppUser;
 import ru.zubarev.services.enums.LinkType;
+
+import java.util.Optional;
 
 import static ru.zubarev.entity.enums.UserState.BASIC_STATE;
 import static ru.zubarev.entity.enums.UserState.WAIT_FOR_EMAIL_STATE;
@@ -31,6 +34,7 @@ public class MainServiceImpl implements MainService {
         private final ProducerService producerService;
         private final RawDataDao rawDataDao;
         private final FileService fileService;
+        private final AppUserService appUserService;
 
     @Override
     public void processTextMessage(Update update) {
@@ -46,7 +50,7 @@ public class MainServiceImpl implements MainService {
         } else if (BASIC_STATE.equals(userState)) {
             output=processServiceCommand(appUser,text);
         } else if (WAIT_FOR_EMAIL_STATE.equals(userState)) {
-            //TODO добавить обработку емейла
+            appUserService.setEmail(appUser,text);
         } else { log.error("Unknown user state"+userState);
             output="Неизвестная ошибка.Введите /cancel и попробуйте снова";
         }
@@ -121,8 +125,8 @@ public class MainServiceImpl implements MainService {
 
     private String processServiceCommand(AppUser appUser, String cmd) {
         if (REGISTRATION.equals(cmd)) {
-            //TODO добавить регистрацию
-            return "Временно недоступно";
+
+            return appUserService.registerUser(appUser);
         } else if (HELP.equals(cmd)) {
             return help();
         } else if (START.equals(cmd)) {
@@ -147,21 +151,20 @@ public class MainServiceImpl implements MainService {
 
     private AppUser findOrSaveAppUser(Update update) {
         User telegramUser=update.getMessage().getFrom();
-        AppUser persistentAppUser = appUserDAO.findAPPUserByTelegramUserId(telegramUser.getId());
+        var optional = appUserDAO.findByTelegramUserId(telegramUser.getId());
 
-        if (persistentAppUser == null) {
+        if (optional.isEmpty()) {
             AppUser transientUser = AppUser.builder().
                     telegramUserId(telegramUser.getId()).
                     userName(telegramUser.getUserName()).
                     firstName(telegramUser.getFirstName()).
                     lastName(telegramUser.getLastName())
-                    //TODO изменить значение по умолчанию после добавления регистрации
-                    .isActive(true)
+                    .isActive(false)
                     .state(BASIC_STATE)
                     .build();
             return appUserDAO.save(transientUser);
         }
-        return persistentAppUser;
+        return optional.get();
 
     }
 

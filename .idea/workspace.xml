@@ -5,21 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bff57b5-52be-4e86-aae2-b90613e52563" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c38d52-2bd3-472b-8934-98f575d1360f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00c38d52-2bd3-472b-8934-98f575d1360f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/AppUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/controller/ActivationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/UserActivationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/UserActivationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f93f3683-5e2e-440a-83db-315b41b23fbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f93f3683-5e2e-440a-83db-315b41b23fbe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a7a5c2c274c6186991eda771d9f09b4d674acae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae17fdbf5957d5a75e358d4863122fbb511cfb3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f93f3683-5e2e-440a-83db-315b41b23fbe/storage_v2/_src_/database/sklad_db.hh0zhA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f93f3683-5e2e-440a-83db-315b41b23fbe/storage_v2/_src_/database/sklad_db.hh0zhA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/089e6acca410d3dda06e1bb4e7f33d1bdc05e887" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c1d11fa21fc978c83dff81540aad617d49f1ddf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51cfdcd1c7ae02f08acbeff7927100cce23a5ddc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62cf4ba8478ab4cefab30f189dfb51feb23baa02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/828f3f05f7b75c2460f90acad50bf4d155e2adc9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942735d7f8deafe579e5622e0faef5c1a796506f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a887ce160e54db45730ae5c16ee79a42c0fedabf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b04a23d1dfb084fd967c01291d9364d3c866d607" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6e3e5e19e26b12970f909306c81a6f787e38d84" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2a8c9078f3b3b26187a97675172800b4632b7e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc3176bf2654ad938bfc3f855a1a0ff2aa6af8fe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-utils/src/main/java/ru/zubarev/CryptoTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/src/main/java/ru/zubarev/utils/CryptoTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/node.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/node.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/ru/zubarev/dto/MailParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/src/main/java/ru/zubarev/dto/MailParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/configuration/NodeConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/configuration/NodeConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/configuration/RestServiceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/configuration/RestServiceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/java/ru/zubarev/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +95,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "spring.configuration.checksum": "94bf7db2bdab4859f189d4f75afdc0ac",
+    "spring.configuration.checksum": "fea69f5fbe37d23fae5737fafe3d54b7",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -115,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MailApplication">
+  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
     <configuration name="scratch | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -180,9 +191,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MailApplication" />
-        <item itemvalue="Spring Boot.RestService" />
         <item itemvalue="Spring Boot.DispatcherApplication" />
+        <item itemvalue="Spring Boot.RestService" />
+        <item itemvalue="Spring Boot.MailApplication" />
         <item itemvalue="Spring Boot.NodeApplication" />
         <item itemvalue="HTTP Request.scratch | #1" />
       </list>
@@ -216,7 +227,8 @@
       <workItem from="1671466690768" duration="1386000" />
       <workItem from="1672835092956" duration="1324000" />
       <workItem from="1672909263971" duration="17117000" />
-      <workItem from="1673003268415" duration="1755000" />
+      <workItem from="1673003268415" duration="6508000" />
+      <workItem from="1673033159885" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="new commit">
       <created>1671530605801</created>

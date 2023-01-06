@@ -6,8 +6,6 @@ m
 m
 =common-jpa/src/main/java/ru/zubarev/entity/BinaryContent.java,7\1\7190a3354787bdcb4d05b341fb2c01ae4b5392fd
 g
-7common-jpa/src/main/java/ru/zubarev/dao/AppUserDAO.java,b\0\b04a23d1dfb084fd967c01291d9364d3c866d607
-g
 7common-jpa/src/main/java/ru/zubarev/entity/AppUser.java,4\f\4fe456b9b906829ae3284c6abdd517235f41de85
 o
 ?common-jpa/src/main/java/ru/zubarev/entity/enums/UserState.java,5\7\57b234ece8210ccbc5237976f433ffde23e1b1da
@@ -29,28 +27,14 @@ G
 common-rabbitmq/pom.xml,1\d\1dea96b5698cd26457582df42f8ec401e02ffafe
 o
 ?common-rabbitmq/src/main/java/ru/zubarev/model/RabbitQueue.java,0\2\02aa90643e627c5bfad09e0b4de7a33706075843
-k
-;dispatcher/src/main/java/ru/zubarev/Utils/MessageUtils.java,0\c\0c1d11fa21fc978c83dff81540aad617d49f1ddf
-n
->dispatcher/src/main/java/ru/zubarev/DispatcherApplication.java,b\6\b6e3e5e19e26b12970f909306c81a6f787e38d84
-x
-Hdispatcher/src/main/java/ru/zubarev/service/impl/UpdateProducerImpl.java,a\8\a887ce160e54db45730ae5c16ee79a42c0fedabf
 o
 ?dispatcher/src/main/java/ru/zubarev/service/UpdateProducer.java,b\3\b3d1eac4052d9a81a127bb6b1ab50cb0e7242609
 o
 ?dispatcher/src/main/java/ru/zubarev/service/AnswerConsumer.java,a\6\a6cbe5853d6a41e489c0885184bee46702abba86
-x
-Hdispatcher/src/main/java/ru/zubarev/service/impl/AnswerConsumerImpl.java,6\2\62cf4ba8478ab4cefab30f189dfb51feb23baa02
-t
-Ddispatcher/src/main/java/ru/zubarev/controller/UpdateController.java,f\c\fc3176bf2654ad938bfc3f855a1a0ff2aa6af8fe
-o
-?dispatcher/src/main/java/ru/zubarev/controller/TelegramBot.java,5\1\51cfdcd1c7ae02f08acbeff7927100cce23a5ddc
 u
 Edispatcher/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java,a\b\abecae062309f9994fdefaa39540da75909731ff
 o
 ?node/src/main/java/ru/zubarev/configuration/RabbitMQConfig.java,c\c\ccd800d86467356a967e15e7898e96e06ff84751
-<
-node/pom.xml,0\8\089e6acca410d3dda06e1bb4e7f33d1bdc05e887
 j
 :node/src/main/java/ru/zubarev/services/enums/LinkType.java,1\e\1e85f163190844cbfb28556d456c064dfc3684dc
 B
@@ -74,8 +58,6 @@ t
 Drest-service/src/main/java/ru/zubarev/controller/FileController.java,1\1\111ab443e9fb3e06062a522efb7cf0358f97ed6a
 f
 6rest-service/src/main/java/ru/zubarev/RestService.java,4\1\41f568c7a116eadbf5097aec593c14b85e5a1004
-e
-5common-utils/src/main/java/ru/zubarev/CryptoTool.java,c\2\c2a8c9078f3b3b26187a97675172800b4632b7e8
 D
 common-utils/pom.xml,6\3\6337cedabd1f3d56c7e738af33c106565b647f27
 g
@@ -84,8 +66,6 @@ t
 Dnode/src/main/java/ru/zubarev/services/impl/ConsumerServiceImpl.java,0\b\0b78b3e0c7c9c7e2584e3f5bd400e50302987ace
 t
 Dnode/src/main/java/ru/zubarev/services/impl/ProducerServiceImpl.java,3\9\390981f79b4739b8a6e9666ac4ba995876d50549
-p
-@node/src/main/java/ru/zubarev/services/impl/MainServiceImpl.java,9\4\942735d7f8deafe579e5622e0faef5c1a796506f
 r
 Bnode/src/main/java/ru/zubarev/configuration/NodeConfiguration.java,3\b\3b817972b05fe75ad3e3c482710cd71c936ea984
 p
@@ -98,7 +78,5 @@ C
 logs/dispatcher.log,d\4\d41cb08e4426b0f67121f395aa30d4bcc649d8bf
 =
 logs/node.log,c\c\ccb5bba3420614b37ea5e9bace7bbc1bb6ef057f
-i
-9mail-service/src/main/java/ru/zubarev/dto/MailParams.java,8\2\828f3f05f7b75c2460f90acad50bf4d155e2adc9
 t
 Dmail-service/src/main/java/ru/zubarev/service/MailSenderService.java,6\8\681fa07f72235b8ba0132e8665cb7063afc5b329
