@@ -6,17 +6,16 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import ru.zubarev.Utils.MessageUtils;
 import ru.zubarev.service.UpdateProducer;
-import ru.zubarev.service.impl.UpdateProducerImpl;
 
 import static ru.zubarev.model.RabbitQueue.*;
 
 @Component
 @Log4j
-public class UpdateController {
+public class UpdateProcessor {
     private UpdateProducer updateProducer;
     private final MessageUtils messageUtils;
    private TelegramBot telegramBot;
-   public UpdateController(MessageUtils messageUtils, UpdateProducer updateProducer){
+   public UpdateProcessor(MessageUtils messageUtils, UpdateProducer updateProducer){
        this.messageUtils=messageUtils;
        this.updateProducer=updateProducer;
    }

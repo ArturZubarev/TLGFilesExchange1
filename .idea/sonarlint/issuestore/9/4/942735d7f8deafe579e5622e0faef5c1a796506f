@@ -1,0 +1,19 @@
+
+q
+java:S21590"VRemove this call to "equals"; comparisons between unrelated types always return false.(ÖŞÜ´ûÿÿÿÿ
+N
+java:S1854W"9Remove this useless assignment to local variable "error".(Ú¼x
+N
+java:S1854Y"9Remove this useless assignment to local variable "error".(¯ÀËp
+C
+java:S1172T"-Remove this unused method parameter "chatId".(òºÁ
+?
+java:S1481W"*Remove this unused "error" local variable.(Ú¼x
+?
+java:S1481Y"*Remove this unused "error" local variable.(¯ÀËp
+q
+java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(ÿ¹³Áúÿÿÿÿ
+r
+java:S2159‚"VRemove this call to "equals"; comparisons between unrelated types always return false.(ŠÑÁİÿÿÿÿÿ
+m
+java:S2159„"VRemove this call to "equals"; comparisons between unrelated types always return false.(İõ´â
